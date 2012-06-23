@@ -169,15 +169,15 @@ added </string>
         <void method="set">
          <object idref="Point2D$Double5">
           <void method="setLocation">
-           <double>287.0</double>
-           <double>253.0</double>
+           <double>273.0</double>
+           <double>250.0</double>
           </void>
          </object>
-         <double>253.0</double>
+         <double>250.0</double>
         </void>
        </void>
       </object>
-      <double>287.0</double>
+      <double>273.0</double>
      </void>
     </void>
    </object>
