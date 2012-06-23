@@ -13,15 +13,15 @@
         <void method="set">
          <object idref="Point2D$Double0">
           <void method="setLocation">
-           <double>69.0</double>
-           <double>34.0</double>
+           <double>40.0</double>
+           <double>67.0</double>
           </void>
          </object>
-         <double>34.0</double>
+         <double>67.0</double>
         </void>
        </void>
       </object>
-      <double>69.0</double>
+      <double>40.0</double>
      </void>
     </void>
    </object>
@@ -30,7 +30,7 @@
    <object class="com.horstmann.violet.StateNode" id="StateNode0">
     <void property="name">
      <void property="text">
-      <string>login</string>
+      <string>logged in</string>
      </void>
     </void>
    </object>
@@ -44,15 +44,15 @@
         <void method="set">
          <object idref="Point2D$Double1">
           <void method="setLocation">
-           <double>161.0</double>
-           <double>18.0</double>
+           <double>192.0</double>
+           <double>25.0</double>
           </void>
          </object>
-         <double>18.0</double>
+         <double>25.0</double>
         </void>
        </void>
       </object>
-      <double>161.0</double>
+      <double>192.0</double>
      </void>
     </void>
    </object>
@@ -75,24 +75,25 @@
         <void method="set">
          <object idref="Point2D$Double2">
           <void method="setLocation">
-           <double>330.0</double>
-           <double>22.0</double>
+           <double>478.0</double>
+           <double>47.0</double>
           </void>
          </object>
-         <double>22.0</double>
+         <double>47.0</double>
         </void>
        </void>
       </object>
-      <double>330.0</double>
+      <double>478.0</double>
      </void>
     </void>
    </object>
   </void>
   <void method="addNode">
-   <object class="com.horstmann.violet.StateNode">
+   <object class="com.horstmann.violet.StateNode" id="StateNode2">
     <void property="name">
      <void property="text">
-      <string>add expense item</string>
+      <string>expense item 
+added </string>
      </void>
     </void>
    </object>
@@ -106,24 +107,24 @@
         <void method="set">
          <object idref="Point2D$Double3">
           <void method="setLocation">
-           <double>458.0</double>
-           <double>51.0</double>
+           <double>406.0</double>
+           <double>148.0</double>
           </void>
          </object>
-         <double>51.0</double>
+         <double>148.0</double>
         </void>
        </void>
       </object>
-      <double>458.0</double>
+      <double>406.0</double>
      </void>
     </void>
    </object>
   </void>
   <void method="addNode">
-   <object class="com.horstmann.violet.StateNode">
+   <object class="com.horstmann.violet.StateNode" id="StateNode3">
     <void property="name">
      <void property="text">
-      <string>add income Item</string>
+      <string> income Item added</string>
      </void>
     </void>
    </object>
@@ -137,15 +138,15 @@
         <void method="set">
          <object idref="Point2D$Double4">
           <void method="setLocation">
-           <double>481.0</double>
-           <double>138.0</double>
+           <double>677.0</double>
+           <double>61.0</double>
           </void>
          </object>
-         <double>138.0</double>
+         <double>61.0</double>
         </void>
        </void>
       </object>
-      <double>481.0</double>
+      <double>677.0</double>
      </void>
     </void>
    </object>
@@ -168,24 +169,24 @@
         <void method="set">
          <object idref="Point2D$Double5">
           <void method="setLocation">
-           <double>305.0</double>
-           <double>137.0</double>
+           <double>287.0</double>
+           <double>253.0</double>
           </void>
          </object>
-         <double>137.0</double>
+         <double>253.0</double>
         </void>
        </void>
       </object>
-      <double>305.0</double>
+      <double>287.0</double>
      </void>
     </void>
    </object>
   </void>
   <void method="addNode">
-   <object class="com.horstmann.violet.StateNode">
+   <object class="com.horstmann.violet.StateNode" id="StateNode4">
     <void property="name">
      <void property="text">
-      <string>allocate budget </string>
+      <string> budget allocated</string>
      </void>
     </void>
    </object>
@@ -199,28 +200,63 @@
         <void method="set">
          <object idref="Point2D$Double6">
           <void method="setLocation">
-           <double>104.0</double>
-           <double>188.0</double>
+           <double>652.0</double>
+           <double>234.0</double>
           </void>
          </object>
-         <double>188.0</double>
+         <double>234.0</double>
         </void>
        </void>
       </object>
-      <double>104.0</double>
+      <double>652.0</double>
      </void>
     </void>
    </object>
   </void>
   <void method="connect">
-   <object class="com.horstmann.violet.StateTransitionEdge"/>
+   <object class="com.horstmann.violet.StateTransitionEdge">
+    <void property="label">
+     <string>login</string>
+    </void>
+   </object>
    <object idref="CircularInitialStateNode0"/>
    <object idref="StateNode0"/>
   </void>
   <void method="connect">
-   <object class="com.horstmann.violet.StateTransitionEdge"/>
+   <object class="com.horstmann.violet.StateTransitionEdge">
+    <void property="label">
+     <string>Add Account</string>
+    </void>
+   </object>
    <object idref="StateNode0"/>
    <object idref="StateNode1"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.StateTransitionEdge">
+    <void property="label">
+     <string>add expense item</string>
+    </void>
+   </object>
+   <object idref="StateNode0"/>
+   <object idref="StateNode2"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.StateTransitionEdge">
+    <void property="label">
+     <string>allocate budget </string>
+    </void>
+   </object>
+   <object idref="StateNode2"/>
+   <object idref="StateNode4"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.StateTransitionEdge">
+    <void property="label">
+     <string>add income Item</string>
+    </void>
+   </object>
+   <object idref="StateNode1"/>
+   <object idref="StateNode3"/>
   </void>
  </object>
 </java>
