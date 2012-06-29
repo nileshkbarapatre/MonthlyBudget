@@ -270,15 +270,15 @@ monthly expense</string>
         <void method="set">
          <object idref="Point2D$Double8">
           <void method="setLocation">
-           <double>714.0</double>
-           <double>149.0</double>
+           <double>612.0</double>
+           <double>143.0</double>
           </void>
          </object>
-         <double>149.0</double>
+         <double>143.0</double>
         </void>
        </void>
       </object>
-      <double>714.0</double>
+      <double>612.0</double>
      </void>
     </void>
    </object>
@@ -333,15 +333,15 @@ expense </string>
         <void method="set">
          <object idref="Point2D$Double10">
           <void method="setLocation">
-           <double>627.0</double>
-           <double>328.0</double>
+           <double>580.0</double>
+           <double>385.0</double>
           </void>
          </object>
-         <double>328.0</double>
+         <double>385.0</double>
         </void>
        </void>
       </object>
-      <double>627.0</double>
+      <double>580.0</double>
      </void>
     </void>
    </object>
@@ -395,15 +395,15 @@ expense </string>
         <void method="set">
          <object idref="Point2D$Double12">
           <void method="setLocation">
-           <double>516.0</double>
-           <double>163.0</double>
+           <double>600.0</double>
+           <double>241.0</double>
           </void>
          </object>
-         <double>163.0</double>
+         <double>241.0</double>
         </void>
        </void>
       </object>
-      <double>516.0</double>
+      <double>600.0</double>
      </void>
     </void>
    </object>
@@ -457,15 +457,15 @@ expense </string>
         <void method="set">
          <object idref="Point2D$Double14">
           <void method="setLocation">
-           <double>615.0</double>
-           <double>251.0</double>
+           <double>602.0</double>
+           <double>307.0</double>
           </void>
          </object>
-         <double>251.0</double>
+         <double>307.0</double>
         </void>
        </void>
       </object>
-      <double>615.0</double>
+      <double>602.0</double>
      </void>
     </void>
    </object>
@@ -589,6 +589,11 @@ expense </string>
    <object class="com.horstmann.violet.UseCaseRelationshipEdge"/>
    <object idref="ActorNode1"/>
    <object idref="UseCaseNode12"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.UseCaseRelationshipEdge"/>
+   <object idref="ActorNode0"/>
+   <object idref="UseCaseNode6"/>
   </void>
  </object>
 </java>
