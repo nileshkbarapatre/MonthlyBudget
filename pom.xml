@@ -14,7 +14,7 @@
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 	</properties>
 	<dependencies>
-		<!-- Spring -->
+		 <!-- Spring framework -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -83,6 +83,54 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- Hibernate framework -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.6.10.Final</version>
+		</dependency>
+            
+	 
+		<!-- Hibernate annotation -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.5.6-Final</version>
+		</dependency>            
+	 
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>3.2.0.Final</version>
+		</dependency>
+		
+		
+		<!-- Hibernate library dependecy start -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+	 
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+	 
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+	 
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.7</version>
+		</dependency>
+		<!-- Hibernate library dependecy end -->
+
 		<!-- @Inject -->
 		<dependency>
 			<groupId>javax.inject</groupId>
@@ -109,13 +157,20 @@
 			<version>1.2</version>
 		</dependency>
 	
-		<!-- Test -->
+		<!-- JUnit testing framework -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency>        
+		</dependency>  
+		
+		<!-- MySQL database driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.20</version>
+		</dependency>      
 	</dependencies>
     <build>
         <plugins>
